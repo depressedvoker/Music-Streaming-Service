@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/DB/images/login.jpg") center/cover fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#form {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  border-radius: 10px;
+  margin: 120px auto;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+#form img.square-image {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+#form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#btn {
+  color: #fff;
+  background-color: #e74c3c;
+  padding: 12px;
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 570px) {
+  #form {
+    width: 65%;
+    margin-left: none;
+    padding: 40px;
+  }
+}
